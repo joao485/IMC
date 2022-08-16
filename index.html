@@ -9,27 +9,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="primeiro-passo">
-            <h3>Calculadora IMC</h3>
-            <hr>
-            <label for="peso">Digite seu peso:</label>
-            <input type="number" placeholder="Seu peso" id="peso">
-            <br><br>
-            <label for="altura">Digite sua altura:</label>
-            <input type="number" placeholder="Sua altura" id="altura">
-            <br><br>
-            <button>Calcular</button>
+    <main>
+        <h2>Cálculadora IMC</h2>
+        <div class="divAltura">
+            <label for="altura">Altura (M)</label>
+            <input type="number" id="altura">
         </div>
-        <div class="segundo-passo">
-            <h3>Resultado!</h3>
-            <p id="resultado">...</p>
-            <button>Calcular Novamente</button>
-            <button>Finalizar</button>
+
+        <div class="divPeso">
+            <label for="peso">Peso (KG</label>
+            <input type="number" id="peso">
         </div>
-    </div>
 
+        <div class="divCalc">
+            <button onclick="calcIMC()">Calcular</button>
+        </div>
 
+        <span id="resultado"></span>
+    </main>
 
     <script src="script.js"></script>
 </body>
